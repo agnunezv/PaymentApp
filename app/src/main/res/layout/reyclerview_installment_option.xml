@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/vertical_margin">
+
+    <TextView
+        android:id="@+id/tv_installment_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/installments_label"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_installment_value"
+        android:layout_width="@dimen/credit_card_image_size"
+        android:layout_height="@dimen/credit_card_image_size"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        app:layout_constraintStart_toEndOf="@id/tv_installment_label"
+        tools:src="@drawable/ic_launcher_background"
+        tools:ignore="ContentDescription"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_installment_description_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        app:layout_constraintStart_toStartOf="@id/tv_installment_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_installment_label"
+        tools:text="Installment Text" />
+
+</android.support.constraint.ConstraintLayout>

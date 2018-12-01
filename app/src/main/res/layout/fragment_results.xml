@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/horizontal_margin"
+    android:layout_marginEnd="@dimen/horizontal_margin"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/tv_results_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_label"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/result_amount_label"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_results_label" />
+
+    <TextView
+        android:id="@+id/tv_amount_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_amount_label"
+        app:layout_constraintStart_toEndOf="@id/tv_amount_label"
+        app:layout_constraintTop_toTopOf="@id/tv_amount_label"
+        tools:text="Amount Value" />
+
+    <TextView
+        android:id="@+id/tv_payment_method_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/payment_method_label"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount_value" />
+
+    <ImageView
+        android:id="@+id/iv_credit_card"
+        android:layout_width="@dimen/credit_card_image_size"
+        android:layout_height="@dimen/credit_card_image_size"
+        app:layout_constraintTop_toBottomOf="@id/tv_payment_method_label"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_credit_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="@id/iv_credit_card"
+        app:layout_constraintStart_toEndOf="@id/iv_credit_card"
+        app:layout_constraintTop_toTopOf="@id/iv_credit_card"
+        tools:text="Credit Card Text" />
+
+    <TextView
+        android:id="@+id/tv_bank_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/result_bank_label"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_credit_card" />
+
+    <ImageView
+        android:id="@+id/iv_bank"
+        android:layout_width="@dimen/credit_card_image_size"
+        android:layout_height="@dimen/credit_card_image_size"
+        app:layout_constraintTop_toBottomOf="@id/tv_bank_label"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_bank_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="@id/iv_bank"
+        app:layout_constraintStart_toEndOf="@id/iv_bank"
+        app:layout_constraintTop_toTopOf="@id/iv_bank"
+        tools:text="Bank Text" />
+
+    <TextView
+        android:id="@+id/tv_installment_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/installments_label"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_bank_value" />
+
+    <TextView
+        android:id="@+id/tv_installment_value"
+        android:layout_width="@dimen/credit_card_image_size"
+        android:layout_height="@dimen/credit_card_image_size"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_installment_label"
+        app:layout_constraintStart_toEndOf="@id/tv_installment_label"
+        app:layout_constraintTop_toTopOf="@id/tv_installment_label"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_launcher_background"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_installment_description_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        app:layout_constraintStart_toStartOf="@id/tv_installment_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_installment_label"
+        tools:text="Installment Text" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/result_back_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_installment_description_value" />
+
+</android.support.constraint.ConstraintLayout>

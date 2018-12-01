@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PaymentApp</string>
+
+    <string name="amount_input_label">Ingrese monto:</string>
+    <string name="continue_label">Continuar</string>
+    <string name="installments_label">Número de cuotas:</string>
+    <string name="toast_error_message">Ocurrió un problema con tu transacción</string>
+    <string name="empty_results">No se encontraron resultados.</string>
+    <string name="amount_input_error">Olvidaste colocar un monto.</string>
+    <string name="dialog_message">Espera un momento...</string>
+    <string name="result_label">Resultado</string>
+    <string name="result_amount_label">Monto ingresado:</string>
+    <string name="payment_method_label">Método de pago:</string>
+    <string name="result_bank_label">Banco:</string>
+    <string name="result_back_label">Volver</string>
+</resources>
